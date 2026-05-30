@@ -1,0 +1,6 @@
+{
+  "name": "Aloka World",
+  "description": "A beautiful digital cultural journal, museum, and contemporary monograph dedicated to nature, nations, conservation, and memory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

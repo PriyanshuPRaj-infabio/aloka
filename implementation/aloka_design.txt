@@ -1,0 +1,250 @@
+aloka.world
+1.
+
+Design.
+
+We are designing:
+• A DIGITAL CULTURAL JOURNAL / MUSEUM / MONOGRAPH
+• a moral and philosophical centre.
+• a quiet cultural foundation
+• a long-horizon creative mission
+Not:
+* a blog,
+* an in uencer page,
+* a travel site,
+* a publishing catalogue,
+* or a personal website.
+The site should essentially have minimal and intentional architecture,
+premium and international feel. If executed correctly, the site will create
+something unusual:
+moral coherence.
+People will subconsciously feel:
+•
+•
+•
+•
+•
+•
+2.
+
+fl
+
+•
+•
+•
+•
+•
+•
+
+the books,
+the mission,
+My life,
+My sister,
+conservation,
+The trust
+
+Feel. The site should feel:
+spacious,
+restrained,
+contemplative,
+international,
+editorial,
+cinematic.
+
+3. Layers:
+Layer
+Aloka
+
+Meaning
+Emotional and moral origin
+
+Aloka Memorial Trust
+
+Ethical direction
+
+Wonderful World Series
+
+Cultural body of work
+
+Individual books
+
+Expressions within the series
+
+Articles / re ections
+
+Intellectual layer
+
+Magnum Editions
+
+Institutional publishing platform
+
+Ambassadors / institutions
+
+Cultural dialogue and international
+engagement
+
+4. The Flow:
+I.
+
+HERO SECTION/ LANDING PAGE
+(The emotional and visual entry)
+
+•
+•
+
+This should feel cinematic and editorial.
+Almost like:
+entering a museum exhibition,
+or opening a ne monograph.
+VISUAL STRUCTURE
+
+•
+•
+•
+
+Large slow-moving visual:
+cinematic landscape,
+or minimal video loop,
+or fade sequence.
+
+fi
+
+fl
+
+No fast cuts.
+No aggressive movement.
+
+TEXT OVERLAY
+
+Minimal.
+Wonderful World
+Cultural works on nature, nations, memory, and conservation
+Very restrained.
+BELOW THE FOLD:
+
+II.
+
+FEATURED STORY / FEATURED ESSAY
+Morocco and the Memory of Landscapes
+Elegant image.(Photo of/ with Ambassador Morocco)
+Short introductory paragraph.
+“Read Essay.”
+It signals:
+re ective cultural work.
+
+III.
+
+WONDERFUL WORLD SERIES
+( PHOTO/ VIDEO OF THE BOOK)
+Visual entry into the books.
+Australia rst.
+Future countries subtly visible.
+Selected Re ection essay
+
+“Silence survives only where societies consciously protect it.”
+Leading to:
+Re ections / Field Notes.
+INSIDE EACH COUNTRY SECTION
+
+A. Cinematic opener
+
+fl
+
+fi
+
+fl
+
+fl
+
+One powerful image.
+
+B. Selected spreads
+Beautifully displayed.
+C. Poetry + image pairings
+the poetry creates emotional identity.
+Not merely photography admiration.
+This is my signature language.
+
+D. Re ection essay
+country-speci c philosophical interpretation
+E. Institutional / ambassador dialogue
+Quietly included where relevant.
+Elegant.
+Minimal.
+Contextual.
+
+IV. REFLECTIONS / FIELD NOTES
+This is broader.
+These essays are NOT tied to one country or one book.
+Alok the cultural thinker emerges.
+Very important distinction.
+This will become the most respected section over time.
+Again:
+NOT blogs.
+Never blogs.
+Instead:
+essays.
+
+V. ABOUT
+
+fi
+
+fl
+
+Very restrained.
+
+VI. MAGNUM EDITIONS
+VII. ALOKA
+Quietly present.
+Never foregrounded aggressively.
+
+VIII.
+
+ALOKA MEMORIAL TRUST
+
+IX. PRESS AND RECOGNITION
+X. CORRESPONDANCE
+
+5. IMPORTANT DESIGN INSIGHT
+ALL SECTIONS SHOULD NOT APPEAR EQUALLY IN MAIN MENU
+
+PRIMARY MENU (VISIBLE TOP NAVIGATION)
+| Wonderful World | Re ections | About |
+
+SECONDARY MENU
+| Magnum Editions |
+| Aloka |
+| Aloka Memorial Trust |
+| Press & Recognition |
+| Correspondence |
+
+SECONDARY / DISCOVERABLE MENU
+
+fl
+
+These appear:
+•
+in footer,
+•
+subtly in side menu,
+•
+or through elegant homepage references.
+
+6.
+
+THE FINAL STRUCTURE
+
+PRIMARY SECTIONS
+
+1. LANDING PAGE
+2. REFLECTIONS / FIELD NOTES
+3. WONDERFUL WORLD SERIES: 2A,2B,2C,2D,2E
+4. ABOUT
+SECONDARY SECTIONS
+5. MAGNUM EDITIONS
+6. ALOKA
+7. ALOKA MEMORIAL TRUST
+8. PRESS AND RECOGNITION
+9. CORRESPONDENCE
+
+

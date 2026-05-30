@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  --color-warm-ivory: #F8F5F0;
+  --color-soft-parchment: #FCFAF7;
+  --color-museum-white: #FAF9F6;
+  --color-prestige-clay: #F2EEE7;
+  --color-charcoal: #1A1A1A;
+  --color-muted-grey: #3F3F3F;
+  --color-subtle-gold: #B08B47;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-warm-ivory);
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DED4;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D5CBBF;
+}
+
+body {
+  background-color: var(--color-warm-ivory);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Elegant selection colors */
+::selection {
+  background-color: #EFECE6;
+  color: var(--color-charcoal);
+}
+
+/* Luxury border styles matching the 1px solid rgba(26,26,26,0.08) spec */
+.prestige-border {
+  border-color: rgba(26, 26, 26, 0.08);
+}
+
+/* 
+ * Global Readability & Contrast Enhancements
+ * Solves "low contrast / thin text" issues site-wide
+ */
+
+/* Override light font weights to normal (400) for legibility, especially on body serif text */
+.font-light {
+  font-weight: 400 !important;
+}
+.font-serif.font-light {
+  font-weight: 400 !important;
+}
+
+/* Darken low-contrast inline hex color used for metadata and sub-captions on light backgrounds */
+.text-\[\#807970\] {
+  color: #4C463F !important;
+}
+
+/* Maintain proper bright legibility for these selectors inside the dark footer container */
+footer .text-\[\#807970\] {
+  color: #A09A90 !important;
+}
+footer .text-\[\#A09A90\] {
+  color: #C0BAB0 !important;
+}
+footer .text-\[\#B0A99F\] {
+  color: #C8C2B8 !important;
+}
+footer .placeholder-\[\#807970\]::placeholder {
+  color: #807970 !important;
+}
+
+
+
+/* Custom Cursor support only on mouse devices */
+@media (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+
+
