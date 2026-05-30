@@ -94,12 +94,12 @@ export default function CustomCursor() {
     <>
       {/* Inner Dot */}
       <motion.div
-        className="fixed top-0 left-0 w-1.5 h-1.5 bg-subtle-gold rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2"
+        className="fixed top-0 left-0 w-1.5 h-1.5 bg-subtle-gold rounded-full pointer-events-none z-[99999] -translate-x-1/2 -translate-y-1/2"
         style={{ x: mouseX, y: mouseY }}
       />
       {/* Outer Ring */}
       <motion.div
-        className="fixed top-0 left-0 border border-subtle-gold/60 rounded-full pointer-events-none z-50 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center font-sans"
+        className="fixed top-0 left-0 border border-subtle-gold/60 rounded-full pointer-events-none z-[99999] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center font-sans"
         style={{
           x: cursorX,
           y: cursorY,

@@ -33,7 +33,7 @@ body {
   background-color: var(--color-warm-ivory);
   color: var(--color-charcoal);
   font-family: var(--font-sans);
-  overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
