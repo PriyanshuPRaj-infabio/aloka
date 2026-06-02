@@ -92,7 +92,7 @@ export default function WonderfulWorld() {
                 Dedicated to Aloka
               </h2>
             </div>
-            
+
             <div className="font-serif font-light text-lg md:text-xl text-charcoal leading-loose italic space-y-4 max-w-sm pl-4 border-l border-subtle-gold/40">
               {content.poetry.poem.map((line, idx) => (
                 <p key={idx} className={line === "" ? "py-2" : ""}>
@@ -113,13 +113,13 @@ export default function WonderfulWorld() {
         </div>
       </section>
 
-      {/* D. REFLECTION ESSAY */}
+      {/* D. REFLECTION */}
       <section className="py-24 bg-soft-parchment border-b border-charcoal/8">
         <div className="max-w-3xl mx-auto px-6 md:px-12 space-y-12">
           {/* Header */}
           <div className="space-y-4 text-center">
             <h3 className="text-[10px] uppercase tracking-[0.3em] text-muted-grey">
-              Reflection Essay
+              Reflection
             </h3>
             <h2 className="font-serif text-3xl md:text-4xl font-light tracking-wide text-charcoal">
               Wonderful World: Australia’s Majestic Landscapes
@@ -138,18 +138,12 @@ export default function WonderfulWorld() {
           </div>
         </div>
       </section>
-
-      {/* E. INSTITUTIONAL DIALOGUE */}
       <section className="py-24 bg-museum-white">
         <div className="max-w-4xl mx-auto px-6 md:px-12 space-y-12">
           <div className="space-y-4 text-center">
-            <span className="text-[10px] uppercase tracking-[0.3em] text-[#807970] font-sans font-semibold">
-              Institutional Dialogue
-            </span>
             <h3 className="font-serif text-3xl font-light tracking-wide text-charcoal">
               {content.dialogue.title}
             </h3>
-            <div className="h-[1px] w-16 bg-charcoal/8 mx-auto mt-6" />
           </div>
 
           <div className="bg-soft-parchment p-8 md:p-12 border border-charcoal/8 space-y-8 shadow-sm">
