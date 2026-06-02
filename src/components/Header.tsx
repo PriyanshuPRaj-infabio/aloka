@@ -138,7 +138,11 @@ export default function Header({ currentView, onNavigate }: HeaderProps) {
                 <span className="hidden sm:inline-block transition-transform duration-300 group-hover:translate-x-[-2px]">
                   Menu
                 </span>
-                <Menu size={16} className={`group-hover:text-subtle-gold transition-colors duration-300 ${shouldHaveDarkText ? "text-charcoal" : "text-white"}`} />
+                <div className="w-5 h-3.5 flex flex-col justify-between items-end">
+                  <span className={`h-[2px] w-full rounded-full transition-all duration-300 ${shouldHaveDarkText ? "bg-charcoal" : "bg-white"} group-hover:bg-subtle-gold`} />
+                  <span className={`h-[2px] w-[60%] rounded-full transition-all duration-300 ${shouldHaveDarkText ? "bg-charcoal" : "bg-white"} group-hover:bg-subtle-gold group-hover:w-full`} />
+                  <span className={`h-[2px] w-full rounded-full transition-all duration-300 ${shouldHaveDarkText ? "bg-charcoal" : "bg-white"} group-hover:bg-subtle-gold`} />
+                </div>
               </button>
             </Magnetic>
           </div>

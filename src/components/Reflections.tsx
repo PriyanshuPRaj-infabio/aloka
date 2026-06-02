@@ -84,7 +84,7 @@ export default function Reflections() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gradient-to-b from-[#FAF8F5] via-[#FAF9F6] to-[#FAF8F5] text-charcoal font-serif selection:bg-[#EAE6DF] selection:text-charcoal relative pb-32">
+    <div className="w-full min-h-screen pt-16 bg-gradient-to-b from-[#FAF8F5] via-[#FAF9F6] to-[#FAF8F5] text-charcoal font-serif selection:bg-[#EAE6DF] selection:text-charcoal relative pb-32">
       {/* 1. Reading Progress Indicator */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[2px] bg-subtle-gold z-[9999] origin-left"
@@ -99,7 +99,7 @@ export default function Reflections() {
             alt="Cinematic Morocco Opener"
             className="w-full h-full"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/35 z-10" />
         </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-12 w-full pb-16">

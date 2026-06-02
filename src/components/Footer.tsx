@@ -4,6 +4,7 @@
  */
 
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 import Magnetic from "./Magnetic.tsx";
 
 interface FooterProps {
@@ -13,6 +14,7 @@ interface FooterProps {
 
 export default function Footer({ onNavigate, currentView }: FooterProps) {
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const [isDropUpOpen, setIsDropUpOpen] = useState(false);
   const [email, setEmail] = useState("");
 
   const primaryLinks = [
@@ -141,7 +143,7 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
           </div>
 
           {/* Philosophical Core Statement */}
-          <div className="col-span-1 md:col-span-3 space-y-4 text-xs font-serif leading-relaxed text-[#A09A90] font-light italic border-t md:border-t-0 md:border-l border-charcoal/40 pt-6 md:pt-0 md:pl-8">
+          <div className="col-span-1 md:col-span-3 space-y-4 text-xl font-serif leading-relaxed text-[#A09A90] font-light italic border-t md:border-t-0 md:border-l border-charcoal/40 pt-6 md:pt-0 md:pl-8">
             <p>
               “Silence survives only where societies consciously protect space, scale, and ecological dignity against the pressures of excess and speed.”
             </p>
@@ -157,10 +159,67 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
             <span>© {new Date().getFullYear()} aloka. All rights reserved.</span>
           </div>
         </div>
-        {/* POWERED BY */}
-        <div className="mt-5 flex justify-end">
-          <div className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-3 py-2 transition-all duration-300 hover:bg-white/10">
+        {/* Footer Actions / Credits in lower right corner */}
+        <div className="mt-5 flex flex-col items-end gap-3 relative">
+          {/* Backdrop for closing dropup */}
+          {isDropUpOpen && (
+            <div
+              className="fixed inset-0 z-20 cursor-default"
+              onClick={() => setIsDropUpOpen(false)}
+            />
+          )}
 
+          {/* Drop Up Menu */}
+          <div className="relative z-30">
+            <button
+              onClick={() => setIsDropUpOpen(!isDropUpOpen)}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-white/10 bg-white/5 text-[#807970] hover:text-[#FAF9F5] hover:border-white/20 transition-all duration-300 font-mono text-[9px] uppercase tracking-widest cursor-pointer group"
+            >
+              <span>Store</span>
+              <span className="h-2 w-px bg-white/20" />
+              <span className="font-serif font-black tracking-wider text-[9px] text-white">MAGNUM</span>
+              <span className={`text-[6px] transition-transform duration-300 ${isDropUpOpen ? "rotate-180" : ""}`}>▲</span>
+            </button>
+
+            <AnimatePresence>
+              {isDropUpOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute bottom-full right-0 mb-2 w-48 bg-[#1A1A1A] border border-white/10 rounded-lg shadow-xl py-1 z-30"
+                >
+                  <div className="px-3 py-1.5 border-b border-white/5 text-[9px] font-mono text-[#807970] uppercase tracking-wider">
+                    Magnum Chapters
+                  </div>
+                  <a
+                    href="https://store.magnumphotos.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between px-3 py-2 text-xs text-[#B0A99F] hover:text-white hover:bg-white/5 transition-all"
+                    onClick={() => setIsDropUpOpen(false)}
+                  >
+                    <span>Official Store</span>
+                    <span className="text-[10px]">↗</span>
+                  </a>
+                  <button
+                    onClick={() => {
+                      onNavigate("magnum-editions");
+                      setIsDropUpOpen(false);
+                    }}
+                    className="w-full flex items-center justify-between px-3 py-2 text-xs text-left text-[#B0A99F] hover:text-white hover:bg-white/5 transition-all cursor-pointer"
+                  >
+                    <span>Magnum Editions</span>
+                    <span className="text-[10px]">→</span>
+                  </button>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* POWERED BY */}
+          <div className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-3 py-2 transition-all duration-300 hover:bg-white/10 z-10">
             <a
               href="https://fabulousmedia.in/"
               target="_blank"
@@ -190,7 +249,6 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
                 className="h-3 w-auto"
               />
             </a>
-
           </div>
         </div>
       </div>

@@ -21,11 +21,11 @@ export default function MagnumEditions() {
 
         {/* Cinematic Monograph Cover Frame */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 items-center pt-8">
-          <div className="md:col-span-6 overflow-hidden shadow-xl aspect-[3/4] bg-[#EAE6DF]">
+          <div className="md:col-span-6 overflow-hidden shadow-2xl rounded bg-transparent">
             <img
-              src={IMAGES.hero}
+              src="/ChatGPT Image Jun 2, 2026, 10_33_06 AM.png"
               alt="Magnum Editions Book Spine"
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.01]"
+              className="w-full h-auto object-contain transition-transform duration-700 hover:scale-[1.01]"
               referrerPolicy="no-referrer"
             />
           </div>
