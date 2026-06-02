@@ -86,12 +86,9 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
                 onClick={() => onNavigate("home")}
                 className="block text-left transition-opacity hover:opacity-95 cursor-pointer"
               >
-                <img
-                  src="/landscapes/logo.png"
-                  alt="aloka logo"
-                  className="h-9 md:h-11 w-auto object-contain filter invert brightness-[0.85] opacity-90 hover:opacity-100 transition-opacity"
-                  referrerPolicy="no-referrer"
-                />
+                <span className="font-serif text-lg md:text-xl tracking-[0.35em] font-light uppercase text-white">
+                  ALOKA
+                </span>
               </button>
             </Magnetic>
             <p className="font-serif text-sm italic font-light max-w-xs text-[#A09A90] leading-relaxed">

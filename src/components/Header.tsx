@@ -96,12 +96,9 @@ export default function Header({ currentView, onNavigate }: HeaderProps) {
             className="group flex items-center justify-center cursor-pointer text-left py-1"
             id="logo-button"
           >
-            <img
-              src="/landscapes/logo.png"
-              alt="aloka logo"
-              className={`h-11 md:h-14 w-auto object-contain transition-all duration-300 group-hover:opacity-90 ${shouldHaveDarkText ? "" : "brightness-0 invert"}`}
-              referrerPolicy="no-referrer"
-            />
+            <span className={`font-serif text-lg md:text-xl tracking-[0.35em] font-light uppercase transition-colors duration-300 ${shouldHaveDarkText ? "text-charcoal" : "text-white"}`}>
+              ALOKA
+            </span>
           </button>
 
           {/* Primary Navigation */}
