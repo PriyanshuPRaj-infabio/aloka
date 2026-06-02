@@ -215,7 +215,7 @@ export default function HomeView({ onNavigate }: HomeViewProps) {
             </span>
             <div className="flex flex-col md:flex-row justify-between items-baseline gap-2">
               <RevealTitle
-                text="Visual Entry into the Books"
+                text="Books"
                 className="font-serif text-3xl md:text-5xl font-light text-charcoal tracking-wide"
               />
             </div>
