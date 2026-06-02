@@ -183,20 +183,10 @@ export default function Footer({ onNavigate, currentView }: FooterProps) {
                     transition={{ duration: 0.2 }}
                     className="absolute bottom-full left-0 mb-2 w-56 bg-[#1A1A1A] border border-white/10 rounded-lg shadow-xl py-1 z-30"
                   >
-                    <div className="px-3 py-1.5 border-b border-white/5 text-[9px] font-mono text-[#807970] uppercase tracking-wider">
-                      Secondary Chapters
-                    </div>
-                    <a
-                      href="https://store.magnumphotos.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-between px-3 py-2 text-xs text-[#B0A99F] hover:text-white hover:bg-white/5 transition-all"
-                      onClick={() => setIsDropUpOpen(false)}
-                    >
-                      <span>Official Store</span>
-                      <span className="text-[10px]">↗</span>
-                    </a>
-                    {secondaryLinks.map((link) => (
+                  <div className="px-3 py-1.5 border-b border-white/5 text-[9px] font-mono text-[#807970] uppercase tracking-wider">
+                    Secondary Chapters
+                  </div>
+                  {secondaryLinks.map((link) => (
                       <button
                         key={link.id}
                         onClick={() => {
